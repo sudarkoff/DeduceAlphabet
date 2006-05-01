@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.0.0?>
+
+<ManagedProjectBuildInfo>
+<project id="Alphabet.cdt.managedbuild.target.macosx.exe.925626026" name="Executable (MacOS X)" projectType="cdt.managedbuild.target.macosx.exe">
+<configuration id="cdt.managedbuild.config.gnu.macosx.exe.debug.1981135097" name="Debug" parent="cdt.managedbuild.config.gnu.macosx.exe.debug" artifactName="Alphabet" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" cleanCommand="rm -rf">
+<toolChain superClass="cdt.managedbuild.toolchain.gnu.macosx.exe.debug" id="cdt.managedbuild.toolchain.gnu.macosx.exe.debug.1878627679" name="GCC Tool Chain">
+<tool superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug" id="cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.1922047510" name="GCC C Compiler"/>
+<tool superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug" id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.850070495" name="GCC C++ Compiler"/>
+<tool superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.debug" id="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.debug.1338802560" name="MacOS X C Linker"/>
+<tool superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug" id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug.314449216" name="MacOS X C++ Linker"/>
+<tool superClass="cdt.managedbuild.tool.gnu.assembler.macosx.exe.debug" id="cdt.managedbuild.tool.gnu.assembler.macosx.exe.debug.1549448965" name="GCC Assembler"/>
+</toolChain>
+</configuration>
+<configuration id="cdt.managedbuild.config.macosx.exe.release.286540287" name="Release" parent="cdt.managedbuild.config.macosx.exe.release" artifactName="Alphabet" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" cleanCommand="rm -rf">
+<toolChain superClass="cdt.managedbuild.toolchain.gnu.macosx.exe.release" id="cdt.managedbuild.toolchain.gnu.macosx.exe.release.307435538" name="GCC Tool Chain">
+<tool superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.release" id="cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.release.1560780505" name="GCC C Compiler"/>
+<tool superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.release" id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.release.1196914616" name="GCC C++ Compiler"/>
+<tool superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.release" id="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.release.1236264255" name="MacOS X C Linker"/>
+<tool superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.release" id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.release.207195282" name="MacOS X C++ Linker"/>
+<tool superClass="cdt.managedbuild.tool.gnu.assembler.macosx.exe.release" id="cdt.managedbuild.tool.gnu.assembler.macosx.exe.release.1027924564" name="GCC Assembler"/>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>
