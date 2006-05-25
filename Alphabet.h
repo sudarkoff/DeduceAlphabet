@@ -3,18 +3,22 @@
 
 #include <iostream>
 
+#ifdef _USE_BGL_
+#include <boost/graph/graph_traits.hpp>
+#else
 #include "Graph.h"
+#endif
 
 namespace amz {
 
 class CaseSensitive {
 public:
-	char operator() (char ch) { return ch; }
+	char operator() (char character) { return character; }
 };
 
 class CaseInsensitive {
 public:
-	char operator() (char ch) { return toupper(ch); }
+	char operator() (char character) { return toupper(character); }
 };
 
 template <class CasePolicy>
@@ -27,15 +31,19 @@ class Alphabet {
         {
 			// recursively collect and connect all the unique letters
 			process_words(is, 0);
-			//@debug export graph to dot-file
+#ifdef _DEBUG
+			// export graph to dot-file
 			graph_.export_dot("Initial.dot");
+#endif
 			
 			// reduce the number of connection
 			graph_.eliminate_shortcuts();
 			// sort the graph
 			graph_.sort();
-			//@debug export graph to dot-file
+#ifdef _DEBUG
+			// export graph to dot-file
 			graph_.export_dot("Final.dot");
+#endif
         }
         
         void output(std::ostream& os)
@@ -45,6 +53,7 @@ class Alphabet {
         }
         
 	private:
+		/// @todo Refactor to use boost::graph library.
 		amz::graph<char> graph_;
 		CasePolicy case_policy_;
 		
