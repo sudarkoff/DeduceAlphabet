@@ -1,0 +1,3 @@
+Given a sorted list of words of some unknown language, deduce the alphabet. Detect the situations when the alphabet could not be deduced due to either insufficient or inconsistent data.
+
+This was given to me as part of a technical interview. I spent three evenings solving it.
