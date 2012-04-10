@@ -18,11 +18,11 @@ int main(int argc, char* argv[])
     }
 
     try {
-		amz::Alphabet<amz::CaseInsensitive> alphabet;
-		alphabet.deduce(ifs);
-		std::cout << "Deduced alphabet: ";
-		alphabet.output(std::cout);
-		std::cout << std::endl;
+        amz::Alphabet<amz::CaseInsensitive> alphabet;
+        alphabet.deduce(ifs);
+        std::cout << "Deduced alphabet: ";
+        alphabet.output(std::cout);
+        std::cout << std::endl;
     }
     catch (std::exception& e) {
         std::cerr << "ERROR: " << e.what() << std::endl;
