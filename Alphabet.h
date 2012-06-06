@@ -2,6 +2,7 @@
 #define _ALPHABET_H_5EF10239_98DE_41F1_AAE0_B6135EFD0439_DEFINED_
 
 #include <iostream>
+#include <climits>
 
 #ifdef _USE_BGL_
 #include <boost/graph/graph_traits.hpp>
@@ -19,6 +20,16 @@ public:
 class CaseInsensitive {
 public:
     char operator() (char character) { return toupper(character); }
+};
+
+class ForceUpperCase {
+public:
+    char operator() (char character) { return toupper(character); }
+};
+
+class ForceLowerCase {
+public:
+    char operator() (char character) { return tolower(character); }
 };
 
 template <class CasePolicy>
@@ -61,16 +72,16 @@ class Alphabet {
         {
             while (!is.eof()) {
                 // get the character and add it to the alphabet
-                char curr = case_policy_(is.get());
+                auto curr = case_policy_(is.get());
                 insert_character(curr);
                 
                 // read the character immediately under the current one
-                std::ios::pos_type pos = is.tellg();
+                auto pos = is.tellg();
                 is.ignore(INT_MAX, '\n');
                 std::string word = "";
                 std::getline(is, word);
                 is.seekg(pos);
-                char next = case_policy_(word[column]);
+                auto next = case_policy_(word[column]);
                 if (is.eof()) return;
                 
                 // if the character below is the same, go to the next column
@@ -87,8 +98,8 @@ class Alphabet {
                     // add the rest of the word to the alphabet
                     std::string rest = "";
                     std::getline(is, rest);
-                    for (size_t i = 0; i < rest.length(); ++i) {
-                        insert_character(case_policy_(rest[i]));
+                    for (auto c : rest) {
+                        insert_character(case_policy_(c));
                     }
                 }
                 
